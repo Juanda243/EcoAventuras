@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eco Adventurers | María Lucía Metropolitan Park</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =================================
+                 NAVEGACIÓN
+    ================================= -->
+
+<header class="header" id="header">
+
+    <a href="#inicio" class="logo">
+        <img src="logo.png" alt="Eco Adventurers - María Lucía Metropolitan Park">
+    </a>
+
+    <nav class="nav" id="mainNav">
+        <a href="#inicio" data-i18n="nav.home">Home</a>
+        <a href="#parque" data-i18n="nav.park">The park</a>
+        <a href="#planes" data-i18n="nav.plans">Tours</a>
+        <a href="#recorridos" data-i18n="nav.routes">Park features</a>
+        <a href="#galeria" data-i18n="nav.gallery">Gallery</a>
+        <a href="#ubicacion" data-i18n="nav.location">Location</a>
+        <a href="#reserva" class="nav-button" data-i18n="nav.book">Book now</a>
+    </nav>
+
+    <!-- BOTONES SIEMPRE VISIBLES -->
+    <div class="header-tools">
+
+        <button id="languageToggle" class="tool-button language-button" type="button" aria-label="Change language">
+            <i class="bi bi-translate"></i>
+            <span>ES</span>
+        </button>
+
+        <button id="themeToggle" class="tool-button" type="button" aria-label="Cambiar tema">
+            <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <i class="bi bi-list"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+    <main>
+
+        <!-- =================================
+                     HERO
+        ================================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow" data-i18n="hero.eyebrow">
+                    VILLAVICENCIO · META · COLOMBIA
+                </p>
+
+                <h1>
+                    <span class="hero-title-main" data-i18n="hero.title">Eco</span>
+                    <span data-i18n="hero.name">Adventurers</span>
+                </h1>
+
+                <p class="hero-description" data-i18n="hero.description">
+                    Discover nature, live the adventure at María Lucía Metropolitan Park.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#planes" class="btn btn-primary">
+                        <span data-i18n="hero.explore">
+                            View tours
+                        </span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#parque" class="btn btn-outline" data-i18n="hero.park">
+                        Explore the park
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-info">
+                <div>
+                    <strong data-i18n="hero.family">Family</strong>
+                    <span data-i18n="hero.hectares">for everyone</span>
+                </div>
+                <div>
+                    <strong data-i18n="hero.nature">Nature</strong>
+                    <span data-i18n="hero.destination">natural space</span>
+                </div>
+                <div>
+                    <strong data-i18n="hero.fun">Fun</strong>
+                    <span data-i18n="hero.experiences">recreation</span>
+                </div>
+            </div>
+
+
+            <a href="#parque" class="scroll-down">
+
+                <span data-i18n="hero.more">
+                    Discover more
+                </span>
+
+                <i class="bi bi-arrow-down"></i>
+
+            </a>
+
+        </section>
+
+
+        <!-- =================================
+                  INTRODUCCIÓN
+        ================================= -->
+
+        <section class="intro section" id="parque">
+
+            <div class="section-label">
+                <span>01</span>
+                <span data-i18n="intro.label">ABOUT THE PARK</span>
+            </div>
+
+            <div class="intro-grid">
+                <div class="intro-title">
+                    <h2>
+                        <span data-i18n="intro.title">What is María Lucía</span>
+                        <em data-i18n="intro.titleEm">Metropolitan Park?</em>
+                    </h2>
+                </div>
+
+                <div class="intro-text">
+                    <p data-i18n="intro.text1">
+                        It is a natural and recreational space located in Villavicencio, created for environmental conservation and enjoyment by the whole family.
+                    </p>
+
+                    <p data-i18n="intro.text2">
+                        It features ecological trails, lakes, green areas, and a great variety of flora and fauna, where you can connect with nature, breathe fresh air, and learn about the region's biodiversity.
+                    </p>
+
+                    <a href="#recorridos" class="text-link">
+                        <span data-i18n="intro.explore">Discover what you can find</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>>
+
+
+        <!-- =================================
+                  CUATRO MIRADAS
+        ================================= -->
+
+        <section class="miradas section">
+
+            <div class="section-heading">
+                <div class="section-label">
+                    <span>02</span>
+                    <span data-i18n="views.label">WHAT CAN YOU FIND?</span>
+                </div>
+
+                <h2>
+                    <span data-i18n="views.title">Explore the park.</span>
+                    <em data-i18n="views.titleEm">Discover its natural spaces.</em>
+                </h2>
+
+                <p data-i18n="views.description">
+                    María Lucía offers natural, recreational, and educational spaces for the whole family.
+                </p>
+            </div>
+
+            <div class="miradas-grid">
+                <article class="mirada-card naturaleza">
+                    <div class="card-number">01</div>
+                    <div class="card-icon"><span>🌿</span></div>
+                    <div class="card-content">
+                        <h3 data-i18n="views.trails.title">Ecological trails</h3>
+                        <p data-i18n="views.trails.text">Walk through natural paths and discover the park's landscapes.</p>
+                    </div>
+                    <a href="#planes" class="card-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                </article>
+
+                <article class="mirada-card biodiversidad">
+                    <div class="card-number">02</div>
+                    <div class="card-icon"><span>💧</span></div>
+                    <div class="card-content">
+                        <h3 data-i18n="views.lakes.title">Lakes and water areas</h3>
+                        <p data-i18n="views.lakes.text">Enjoy peaceful water areas and the life around them.</p>
+                    </div>
+                    <a href="#planes" class="card-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                </article>
+
+                <article class="mirada-card ciencia">
+                    <div class="card-number">03</div>
+                    <div class="card-icon"><span>🦜</span></div>
+                    <div class="card-content">
+                        <h3 data-i18n="views.flora.title">Native flora and fauna</h3>
+                        <p data-i18n="views.flora.text">Observe the plant and animal diversity of the Eastern Plains.</p>
+                    </div>
+                    <a href="#planes" class="card-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                </article>
+
+                <article class="mirada-card aventura">
+                    <div class="card-number">04</div>
+                    <div class="card-icon"><span>📷</span></div>
+                    <div class="card-content">
+                        <h3 data-i18n="views.viewpoints.title">Viewpoints and photography areas</h3>
+                        <p data-i18n="views.viewpoints.text">Take photographs and enjoy scenic viewpoints throughout the park.</p>
+                    </div>
+                    <a href="#planes" class="card-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                </article>
+
+                <article class="mirada-card naturaleza">
+                    <div class="card-number">05</div>
+                    <div class="card-icon"><span>🌳</span></div>
+                    <div class="card-content">
+                        <h3 data-i18n="views.rest.title">Rest areas</h3>
+                        <p data-i18n="views.rest.text">Take a break and enjoy the natural surroundings.</p>
+                    </div>
+                    <a href="#planes" class="card-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                </article>
+
+                <article class="mirada-card biodiversidad">
+                    <div class="card-number">06</div>
+                    <div class="card-icon"><span>👨‍👩‍👧‍👦</span></div>
+                    <div class="card-content">
+                        <h3 data-i18n="views.activities.title">Educational and recreational activities</h3>
+                        <p data-i18n="views.activities.text">Learn about biodiversity while enjoying activities for the whole family.</p>
+                    </div>
+                    <a href="#planes" class="card-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                </article>
+            </div>
+        </section>>
+
+
+        <!-- =================================
+                       PLANES
+        ================================= -->
+
+        <section class="planes section" id="planes">
+
+            <div class="section-heading centered">
+                <div class="section-label">
+                    <span>03</span>
+                    <span data-i18n="plans.label">OUR TOURS</span>
+                </div>
+
+                <h2>
+                    <span data-i18n="plans.title">Choose your</span>
+                    <em data-i18n="plans.titleEm">adventure.</em>
+                </h2>
+
+                <p data-i18n="plans.description">
+                    Four tour options inspired by the natural and recreational spaces of María Lucía Metropolitan Park.
+                </p>
+            </div>
+
+            <div class="planes-grid">
+
+                <article class="plan-card">
+                    <div class="plan-image plan-1">
+                        <span class="plan-tag" data-i18n="plans.essential">ECOLOGICAL</span>
+                    </div>
+                    <div class="plan-body">
+                        <div class="plan-top">
+                            <span><i class="bi bi-clock"></i> <span data-i18n="plans.hours2">2 hours</span></span>
+                            <span><i class="bi bi-people"></i> <span data-i18n="plans.groups">Min. 5 people</span></span>
+                        </div>
+                        <h3 data-i18n="plans.natureRoute">Ecological Trail</h3>
+                        <p data-i18n="plans.natureText">Guided tour through ecological trails. Round-trip transportation and lunch included. Minimum 5 people.</p>
+                        <div class="plan-footer">
+                            <div><small data-i18n="plans.from">Price</small><strong>$45,000</strong></div>
+                            <a href="#reserva"><span data-i18n="plans.choose">Book</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plan-card featured">
+                    <div class="plan-image plan-2">
+                        <span class="plan-tag" data-i18n="plans.popular">BUTTERFLY</span>
+                    </div>
+                    <div class="plan-body">
+                        <div class="plan-top">
+                            <span><i class="bi bi-clock"></i> <span data-i18n="plans.hours3">3 hours</span></span>
+                            <span><i class="bi bi-people"></i> <span data-i18n="plans.groups">Min. 5 people</span></span>
+                        </div>
+                        <h3 data-i18n="plans.butterflyWorld">Butterfly Tour</h3>
+                        <p data-i18n="plans.butterflyText">Butterfly tour and viewing. Round-trip transportation and lunch included. Minimum 5 people.</p>
+                        <div class="plan-footer">
+                            <div><small data-i18n="plans.from">Price</small><strong>$60,000</strong></div>
+                            <a href="#reserva"><span data-i18n="plans.choose">Book</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plan-card">
+                    <div class="plan-image plan-3">
+                        <span class="plan-tag" data-i18n="plans.adventure">WILDLIFE</span>
+                    </div>
+                    <div class="plan-body">
+                        <div class="plan-top">
+                            <span><i class="bi bi-clock"></i> <span data-i18n="plans.hours4">4 hours</span></span>
+                            <span><i class="bi bi-people"></i> <span data-i18n="plans.groups">Min. 5 people</span></span>
+                        </div>
+                        <h3 data-i18n="plans.explorersRoute">Flora and Fauna Tour</h3>
+                        <p data-i18n="plans.explorersText">Ecological trails, wildlife and flora viewing. Round-trip transportation and lunch included. Minimum 5 people.</p>
+                        <div class="plan-footer">
+                            <div><small data-i18n="plans.from">Price</small><strong>$70,000</strong></div>
+                            <a href="#reserva"><span data-i18n="plans.choose">Book</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plan-card">
+                    <div class="plan-image plan-4">
+                        <span class="plan-tag" data-i18n="plans.premium">PREMIUM</span>
+                    </div>
+                    <div class="plan-body">
+                        <div class="plan-top">
+                            <span><i class="bi bi-clock"></i> <span data-i18n="plans.hours5">5 hours</span></span>
+                            <span><i class="bi bi-people"></i> <span data-i18n="plans.groups">Min. 5 people</span></span>
+                        </div>
+                        <h3 data-i18n="plans.premiumTitle">Premium Tour</h3>
+                        <p data-i18n="plans.premiumText">Includes lakes, butterflies, flora, fauna, trails, and everything the park has to offer. Round-trip transportation and lunch included. Minimum 5 people.</p>
+                        <div class="plan-footer">
+                            <div><small data-i18n="plans.from">Price</small><strong>$85,000</strong></div>
+                            <a href="#reserva"><span data-i18n="plans.choose">Book</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="fiction-note" data-i18n="plans.note">
+                * Tour information and prices are based on the provided brochure and presented for academic purposes.
+            </p>
+        </section>>
+
+
+        <!-- =================================
+                    RECORRIDOS
+        ================================= -->
+
+        <section class="recorridos section" id="recorridos">
+
+            <div class="recorridos-header">
+                <div>
+                    <div class="section-label">
+                        <span>04</span>
+                        <span data-i18n="routes.label">ECOLOGICAL EXPERIENCE</span>
+                    </div>
+
+                    <h2>
+                        <span data-i18n="routes.title">Connect with</span>
+                        <em data-i18n="routes.titleEm">nature and biodiversity.</em>
+                    </h2>
+                </div>
+
+                <p data-i18n="routes.description">
+                    Explore ecological trails, observe native flora and fauna, enjoy the lakes and discover spaces created for environmental learning and recreation.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-icon"><i class="bi bi-tree"></i></div>
+                    <div class="timeline-content">
+                        <span data-i18n="routes.stop1">FEATURE</span>
+                        <h3 data-i18n="routes.nature">Ecological trails</h3>
+                        <p data-i18n="routes.natureText">Guided paths where you can walk, observe and connect with nature.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-icon"><i class="bi bi-water"></i></div>
+                    <div class="timeline-content">
+                        <span data-i18n="routes.stop2">FEATURE</span>
+                        <h3 data-i18n="routes.nurseries">Lakes and water areas</h3>
+                        <p data-i18n="routes.nurseriesText">Natural water spaces where visitors can enjoy the landscape and surrounding life.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-icon"><i class="bi bi-binoculars"></i></div>
+                    <div class="timeline-content">
+                        <span data-i18n="routes.stop3">FEATURE</span>
+                        <h3 data-i18n="routes.lake">Viewpoints</h3>
+                        <p data-i18n="routes.lakeText">Scenic areas for observation and photography.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-icon"><i class="bi bi-book"></i></div>
+                    <div class="timeline-content">
+                        <span data-i18n="routes.stop4">FEATURE</span>
+                        <h3 data-i18n="routes.research">Learning and recreation</h3>
+                        <p data-i18n="routes.researchText">Educational and recreational activities focused on biodiversity.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-icon"><i class="bi bi-flower1"></i></div>
+                    <div class="timeline-content">
+                        <span data-i18n="routes.stop5">FEATURE</span>
+                        <h3 data-i18n="routes.butterflies">Native flora and fauna</h3>
+                        <p data-i18n="routes.butterfliesText">Discover the variety of plants and wildlife found in the region.</p>
+                    </div>
+                </div>
+            </div>
+        </section>>
+
+
+        <!-- =================================
+                    EXPERIENCIA
+        ================================= -->
+
+        <section class="experience section">
+            <div class="experience-image">
+                <div class="experience-overlay"></div>
+                <div class="experience-text">
+                    <span data-i18n="experience.kicker">FUN FACT</span>
+                    <h2>
+                        <span data-i18n="experience.title">Why is it called</span>
+                        <em data-i18n="experience.titleEm">María Lucía?</em>
+                    </h2>
+                    <p data-i18n="experience.text">
+                        The name María Lucía was chosen in honor of Mrs. María Lucía García Orjuela, mother of Rafael Mojica García, founder of Corporación Universitaria del Meta. The park was created with a focus on conservation, research, and environmental protection in the Eastern Plains of Colombia.
+                    </p>
+                </div>
+            </div>
+        </section>>
+
+
+        <!-- =================================
+                     GALERÍA
+        ================================= -->
+
+        <section class="galeria section" id="galeria">
+
+            <div class="section-heading centered">
+
+                <div class="section-label">
+
+                    <span>05</span>
+
+                    <span data-i18n="gallery.label">
+                        GALERÍA
+                    </span>
+
+                </div>
+
+
+                <h2>
+
+                    <span data-i18n="gallery.title">
+                        Así se siente
+                    </span>
+
+                    <em data-i18n="gallery.titleEm">
+                        María Lucía.
+                    </em>
+
+                </h2>
+
+
+                <p data-i18n="gallery.description">
+                    Nature, biodiversity, and landscapes of the Eastern Plains.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item large gallery-1">
+                    <span data-i18n="gallery.landscape">
+                    
+                    </span>
+                </div>
+
+                <div class="gallery-item gallery-2">
+                    <span data-i18n="gallery.biodiversity">
+                        
+                    </span>
+                </div>
+
+                <div class="gallery-item gallery-3">
+                    <span data-i18n="gallery.nature">
+                        
+                    </span>
+                </div>
+
+                <div class="gallery-item gallery-4">
+                    <span data-i18n="gallery.butterflies">
+                    
+                    </span>
+                </div>
+
+                <div class="gallery-item wide gallery-5">
+                    <span data-i18n="gallery.exploration">
+                        
+                    </span>
+                </div>
+                
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+                    UBICACIÓN
+        ================================= -->
+
+        <section class="ubicacion section" id="ubicacion">
+
+            <div class="location-grid">
+
+                <div class="location-content">
+
+                    <div class="section-label">
+
+                        <span>06</span>
+
+                        <span data-i18n="location.label">
+                            ENCUÉNTRANOS
+                        </span>
+
+                    </div>
+
+
+                    <h2>
+
+                        <span data-i18n="location.title">
+                            Villavicencio, Meta
+                        </span>
+
+                        <em data-i18n="location.titleEm">
+                            Colombia.
+                        </em>
+
+                    </h2>
+
+
+                    <p data-i18n="location.description">
+                        María Lucía Metropolitan Park is a natural and recreational space located in Villavicencio, Meta, Colombia.
+                    </p>
+
+
+                    <div class="location-data">
+
+                        <div>
+
+                            <i class="bi bi-geo-alt"></i>
+
+                            <div>
+
+                                <small data-i18n="location.placeLabel">
+                                    LOCATION
+                                </small>
+
+                                <strong data-i18n="location.place">
+                                    Villavicencio, Meta
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="bi bi-signpost-2"></i>
+
+                            <div>
+
+                                <small data-i18n="location.routeLabel">
+                                    REGION
+                                </small>
+
+                                <strong data-i18n="location.route">
+                                    Eastern Plains of Colombia
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#reserva" class="btn btn-primary">
+
+                        <span data-i18n="location.plan">
+                            Planear mi visita
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div class="map-box">
+
+                    <div class="map-decoration">
+                        <i class="bi bi-compass"></i>
+                    </div>
+
+                    <div class="map-info">
+
+                        <span data-i18n="location.destinationLabel">
+                            DESTINO
+                        </span>
+
+                        <h3 data-i18n="location.destination">
+                            Parque Metropolitano
+                            María Lucía
+                        </h3>
+
+                        <p>
+                            Villavicencio · Meta · Colombia
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+                      RESERVA
+        ================================= -->
+
+        <section class="reserva section" id="reserva">
+
+            <div class="booking-box">
+
+                <div class="booking-intro">
+
+                    <div class="section-label">
+
+                        <span>07</span>
+
+                        <span data-i18n="booking.label">
+                            RESERVA
+                        </span>
+
+                    </div>
+
+
+                    <h2>
+
+                        <span data-i18n="booking.title">
+                            Tu próxima
+                        </span>
+
+                        <em data-i18n="booking.titleEm">
+                            aventura comienza aquí.
+                        </em>
+
+                    </h2>
+
+
+                    <p data-i18n="booking.description">
+                        Selecciona una experiencia y déjanos imaginar
+                        contigo tu próximo recorrido por María Lucía.
+                    </p>
+
+                </div>
+
+
+                <form id="bookingForm" class="booking-form">
+
+
+                    <div class="form-group">
+
+                        <label for="name" data-i18n="form.name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your name"
+                            data-placeholder-es="Tu nombre"
+                            data-placeholder-en="Your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email" data-i18n="form.email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="tucorreo@email.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="people" data-i18n="form.people">
+                            People
+                        </label>
+
+                        <select id="people" required>
+
+                            <option value="" data-es="Select" data-en="Select">Select</option>
+
+                            <option value="1" data-es="1 person" data-en="1 person">1 person</option>
+
+                            <option value="2" data-es="2 people" data-en="2 people">2 people</option>
+
+                            <option value="3-5" data-es="3 - 5 people" data-en="3 - 5 people">3 - 5 people</option>
+
+                            <option value="6+" data-es="More than 6 people" data-en="More than 6 people">More than 6 people</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="plan" data-i18n="form.experience">
+                            Tour
+                        </label>
+
+                        <select id="plan" required>
+
+                            <option value="" data-es="Select a tour" data-en="Select a tour">Select a tour</option>
+
+                            <option
+                                value="naturaleza"
+                                data-es="Ecological Trail"
+                                data-en="Ecological Trail">
+                                Ruta Naturaleza
+                            </option>
+
+                            <option
+                                value="mariposas"
+                                data-es="Butterfly Tour"
+                                data-en="Butterfly Tour">
+                                Mundo Mariposa
+                            </option>
+
+                            <option
+                                value="exploradores"
+                                data-es="Flora and Fauna Tour"
+                                data-en="Flora and Fauna Tour">
+                                Ruta Exploradores
+                            </option>
+
+                            <option
+                                value="premium"
+                                data-es="Premium Tour"
+                                data-en="María Lucía Premium">
+                                María Lucía Premium
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="date" data-i18n="form.date">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary form-button">
+
+                        <span data-i18n="form.submit">
+                            Request tour
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+                    FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="logo footer-logo">
+                    <img src="logo.png" alt="Eco Adventurers - María Lucía Metropolitan Park">
+                </a>
+
+
+                <p data-i18n="footer.description">
+                    Discover nature, biodiversity, and recreation at María Lucía Metropolitan Park.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4 data-i18n="footer.explore">
+                    Explore
+                </h4>
+
+                <a href="#parque" data-i18n="nav.park">
+                    El parque
+                </a>
+
+                <a href="#planes" data-i18n="nav.plans">
+                    Tours
+                </a>
+
+                <a href="#recorridos" data-i18n="nav.routes">
+                    Park features
+                </a>
+
+                <a href="#galeria" data-i18n="nav.gallery">
+                    Gallery
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4 data-i18n="footer.contact">
+                    Contact
+                </h4>
+
+                <a href="#ubicacion">
+                    Villavicencio, Meta
+                </a>
+
+                <a href="#reserva" data-i18n="footer.book">
+                    Book a tour
+                </a>
+
+                <a href="mailto:hola@marialuciatravel.com">
+                    hola@marialuciatravel.com
+                </a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h4 data-i18n="footer.follow">
+                    Follow us
+                </h4>
+
+                <div>
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p data-i18n="footer.copyright">
+                © 2026 Eco Adventurers. Fictional academic project.
+            </p>
+
+            <a href="#inicio">
+
+                <span data-i18n="footer.top">
+                    Back to top
+                </span>
+
+                <i class="bi bi-arrow-up"></i>
+
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =================================
+              MENSAJE DE RESERVA
+    ================================= -->
+
+    <div class="success-message" id="successMessage">
+
+        <div class="success-icon">
+            <i class="bi bi-check-lg"></i>
+        </div>
+
+        <h3 data-i18n="success.title">
+            Tour request received!
+        </h3>
+
+        <p data-i18n="success.text">
+            Your request was received. This demonstration is part of an academic project.
+        </p>
+
+        <button id="closeMessage" data-i18n="success.button">
+            Continue exploring
+        </button>
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
