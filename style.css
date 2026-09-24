@@ -1095,9 +1095,7 @@ img{
     background-image:url("9.png");
 }
 
-.gallery-4{
-    background-image:url("6.jpg");
-}
+
 
 .gallery-5{
     grid-column:2 / 4;
